@@ -1,0 +1,302 @@
+[
+  {
+    "cpf": "08096987494",
+    "email": "ana.silva@gestao.com",
+    "senha": "784512"
+  },
+  {
+    "cpf": "73546543316",
+    "email": "carlos.oliveira@gestao.com",
+    "senha": "965823"
+  },
+  {
+    "cpf": "86296817030",
+    "email": "mariana.costa@professor.com",
+    "senha": "147258"
+  },
+  {
+    "cpf": "39835915539",
+    "email": "pedro.santos@professor.com",
+    "senha": "258369"
+  },
+  {
+    "cpf": "01490040888",
+    "email": "juliana.pereira@professor.com",
+    "senha": "369147"
+  },
+  {
+    "cpf": "16142947739",
+    "email": "ricardo.almeida@professor.com",
+    "senha": "482573"
+  },
+  {
+    "cpf": "86256221269",
+    "email": "fernanda.lima@professor.com",
+    "senha": "573684"
+  },
+  {
+    "cpf": "50164417392",
+    "email": "roberto.souza@professor.com",
+    "senha": "684795"
+  },
+  {
+    "cpf": "60459307714",
+    "email": "patricia.rocha@professor.com",
+    "senha": "795816"
+  },
+  {
+    "cpf": "11521384305",
+    "email": "marcos.ferreira@professor.com",
+    "senha": "816927"
+  },
+  {
+    "cpf": "31715206713",
+    "email": "lucia.mendes@professor.com",
+    "senha": "927138"
+  },
+  {
+    "cpf": "63321417120",
+    "email": "gustavo.barbosa@professor.com",
+    "senha": "138249"
+  },
+  {
+    "cpf": "82146984779",
+    "email": "joao.gomes@gremio.com",
+    "senha": "451267"
+  },
+  {
+    "cpf": "79134794519",
+    "email": "maria.ribeiro@gremio.com",
+    "senha": "562378"
+  },
+  {
+    "cpf": "15003834121",
+    "email": "lucas.martins@gremio.com",
+    "senha": "673489"
+  },
+  {
+    "cpf": "58545665964",
+    "email": "sofia.cardoso@gremio.com",
+    "senha": "784591"
+  },
+  {
+    "cpf": "87569037891",
+    "email": "mateus.dias@gremio.com",
+    "senha": "895612"
+  },
+  {
+    "cpf": "06755208546",
+    "email": "laura.teixeira@gremio.com",
+    "senha": "916723"
+  },
+  {
+    "cpf": "84314337734",
+    "email": "enzo.moreira@gremio.com",
+    "senha": "127834"
+  },
+  {
+    "cpf": "81294683431",
+    "email": "valentina.nunes@gremio.com",
+    "senha": "238945"
+  },
+  {
+    "cpf": "22359323376",
+    "email": "gabriel.castro@gremio.com",
+    "senha": "349156"
+  },
+  {
+    "cpf": "51413910446",
+    "email": "helena.carvalho@gremio.com",
+    "senha": "451267"
+  },
+  {
+    "cpf": "21097686813",
+    "email": "rafael.pinto@aluno.com",
+    "senha": "567812"
+  },
+  {
+    "cpf": "03026041202",
+    "email": "beatriz.ramos@aluno.com",
+    "senha": "678923"
+  },
+  {
+    "cpf": "57150363057",
+    "email": "bruno.azevedo@aluno.com",
+    "senha": "789134"
+  },
+  {
+    "cpf": "57954271651",
+    "email": "isabela.correia@aluno.com",
+    "senha": "891245"
+  },
+  {
+    "cpf": "46923760278",
+    "email": "diego.goncalves@aluno.com",
+    "senha": "912356"
+  },
+  {
+    "cpf": "24724366055",
+    "email": "larissa.lopes@aluno.com",
+    "senha": "123467"
+  },
+  {
+    "cpf": "01550493594",
+    "email": "thiago.monteiro@aluno.com",
+    "senha": "234578"
+  },
+  {
+    "cpf": "16509498986",
+    "email": "yasmin.barros@aluno.com",
+    "senha": "345689"
+  },
+  {
+    "cpf": "70095224063",
+    "email": "eduardo.freitas@aluno.com",
+    "senha": "456791"
+  },
+  {
+    "cpf": "94055379598",
+    "email": "clara.andrade@aluno.com",
+    "senha": "567812"
+  },
+  {
+    "cpf": "27292387226",
+    "email": "felipe.vasconcelos@aluno.com",
+    "senha": "678923"
+  },
+  {
+    "cpf": "80155771849",
+    "email": "marina.magalhaes@aluno.com",
+    "senha": "789134"
+  },
+  {
+    "cpf": "19026165566",
+    "email": "vinicius.peixoto@aluno.com",
+    "senha": "891245"
+  },
+  {
+    "cpf": "17702334034",
+    "email": "luiza.tavares@aluno.com",
+    "senha": "912356"
+  },
+  {
+    "cpf": "70578138830",
+    "email": "igor.fonseca@aluno.com",
+    "senha": "123467"
+  },
+  {
+    "cpf": "62317400562",
+    "email": "manuela.menezes@aluno.com",
+    "senha": "234578"
+  },
+  {
+    "cpf": "02213121866",
+    "email": "daniel.brito@aluno.com",
+    "senha": "345689"
+  },
+  {
+    "cpf": "17711057146",
+    "email": "giovanna.leal@aluno.com",
+    "senha": "456791"
+  },
+  {
+    "cpf": "96398434150",
+    "email": "leonardo.cunha@aluno.com",
+    "senha": "567812"
+  },
+  {
+    "cpf": "27744459150",
+    "email": "camila.rezende@aluno.com",
+    "senha": "678923"
+  },
+  {
+    "cpf": "68005544172",
+    "email": "andre.silveira@aluno.com",
+    "senha": "789134"
+  },
+  {
+    "cpf": "37246327309",
+    "email": "bruna.figueiredo@aluno.com",
+    "senha": "891245"
+  },
+  {
+    "cpf": "46052899008",
+    "email": "otavio.prado@aluno.com",
+    "senha": "912356"
+  },
+  {
+    "cpf": "99437557092",
+    "email": "natalia.souza@aluno.com",
+    "senha": "123467"
+  },
+  {
+    "cpf": "96932387672",
+    "email": "henrique.rocha@aluno.com",
+    "senha": "234578"
+  },
+  {
+    "cpf": "69314052113",
+    "email": "leticia.fernandes@aluno.com",
+    "senha": "345689"
+  },
+  {
+    "cpf": "49411261937",
+    "email": "caio.almeida@aluno.com",
+    "senha": "456791"
+  },
+  {
+    "cpf": "34089987952",
+    "email": "lorena.pires@aluno.com",
+    "senha": "567812"
+  },
+  {
+    "cpf": "23218915957",
+    "email": "alexandre.cruz@aluno.com",
+    "senha": "678923"
+  },
+  {
+    "cpf": "18143200357",
+    "email": "aline.santana@aluno.com",
+    "senha": "789134"
+  },
+  {
+    "cpf": "63763603941",
+    "email": "hugo.batista@aluno.com",
+    "senha": "891245"
+  },
+  {
+    "cpf": "45529764479",
+    "email": "rafaela.dias@aluno.com",
+    "senha": "912356"
+  },
+  {
+    "cpf": "74560554731",
+    "email": "vitor.neves@aluno.com",
+    "senha": "123467"
+  },
+  {
+    "cpf": "82351202251",
+    "email": "melissa.lopes@aluno.com",
+    "senha": "234578"
+  },
+  {
+    "cpf": "75653311569",
+    "email": "renan.queiroz@aluno.com",
+    "senha": "345689"
+  },
+  {
+    "cpf": "43040320357",
+    "email": "tatiane.moura@aluno.com",
+    "senha": "456791"
+  },
+  {
+    "cpf": "43225678990",
+    "email": "maria@gmail.com",
+    "senha": "333"
+  },
+  {
+    "cpf": "54786747882",
+    "email": "vinicius.santana@gmail.com",
+    "senha": "123"
+  }
+]

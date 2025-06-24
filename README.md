@@ -2,7 +2,6 @@
 
 ![logoofc](https://github.com/user-attachments/assets/7bf05b81-5ff1-4d13-bf1c-fca4bf6f2733)
 
-
 **IDP News** é um portal institucional desenvolvido com o objetivo de centralizar e divulgar notícias, eventos, avisos e informações relevantes do Instituto Dom Pedro II de forma acessível, moderna e organizada.
 
 ---
@@ -36,15 +35,15 @@ A coordenadora pedagógica **Profa. Mariana Souza** sugeriu a criação de um po
 
 ### Área Pública (Visitantes)
 
-- Visualização de notícias, eventos e comunicados.
-- Busca por palavra-chave ou categoria.
+- Visualização de notícias, eventos e comunicados
+- Busca por palavra-chave ou categoria
 
 ### Área Administrativa (Privada)
 
-- Login com autenticação por tipo de usuário.
-- Publicação, edição e exclusão de conteúdos.
-- Gerenciamento de posts por ID.
-- Recuperação de senha no próprio site (para e-mails institucionais).
+- Login com autenticação por tipo de usuário
+- Publicação, edição e exclusão de conteúdos
+- Gerenciamento de posts por ID
+- Recuperação de senha no próprio site (para e-mails institucionais)
 
 ---
 
@@ -67,7 +66,7 @@ node --watch app.js
 
 **Importe o banco de dados:**
 
-Use o arquivo MER_Noticias.sql, localizado na pasta trabalho, para criar o banco de dados no MySQL.
+Use o arquivo "MER_Noticias.sql", localizado na pasta trabalho, para criar o banco de dados no MySQL.
 
 
 
@@ -77,7 +76,7 @@ Use o arquivo MER_Noticias.sql, localizado na pasta trabalho, para criar o banco
 **Clone o repositório:**
 
 ```bash
-git clone https://github.com/mariaclarareginatoe/IDP.news.git
+git clone https://github.com/Vini-Nice/IDP.git
 ```
 
 
@@ -96,7 +95,7 @@ node --watch server.js
 
 
 
-**Volte à pasta app do projeto:**
+**Volte à raiz do app para o frontend:**
 
 ```bash
 cd ..
@@ -125,3 +124,7 @@ Maria Clara Reginato
 Richard Sousa Garcia
 
 Vinicius Santana Moreira
+
+
+
+
