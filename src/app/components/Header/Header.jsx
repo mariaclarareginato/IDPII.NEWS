@@ -1,10 +1,23 @@
 "use client";
-
+import { Roboto, Merriweather, Playfair_Display } from 'next/font/google';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 export default function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,7 +45,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className={`bg-blue-600 border-t-2 border-b-2`}>
+            <nav className={`${merriweather.className} bg-blue-600 border-t-2 border-b-2`}>
                 <div className="w-full px-4">
                     <div className="flex justify-between h-20 items-center">
                         {/* Logo e Nome */}

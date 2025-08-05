@@ -4,6 +4,22 @@ import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
+import { Roboto, Merriweather, Playfair_Display } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const AnnouncementCard = ({ date, title, description }) => {
   return (
@@ -98,7 +114,7 @@ export default function ListaAvisos() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <p className={`text-lg`}>Carregando avisos...</p>
+        <p className={`${roboto.className} text-lg`}>Carregando avisos...</p>
       </div>
     );
   }
@@ -106,10 +122,10 @@ export default function ListaAvisos() {
   if (error) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-        <p className={`text-red-500 mb-4`}>{error}</p>
+        <p className={`${roboto.className} text-red-500 mb-4`}>{error}</p>
         <button
           onClick={() => router.push('/')}
-          className={`text-blue-600 hover:text-blue-800`}
+          className={`${roboto.className} text-blue-600 hover:text-blue-800`}
         >
           Voltar para a página inicial
         </button>
@@ -135,11 +151,11 @@ export default function ListaAvisos() {
               <span>Sistema de Comunicados</span>
             </div>
 
-            <h1 className={`text-5xl font-bold text-white mb-6`}>
+            <h1 className={`${merriweather.className} text-5xl font-bold text-white mb-6`}>
               Avisos Institucionais
             </h1>
             
-            <p className={`text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl`}>
+            <p className={`${roboto.className} text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl`}>
               Mantenha-se informado sobre as últimas atualizações, comunicados importantes e informações essenciais da nossa instituição.
             </p>
 
@@ -193,7 +209,7 @@ export default function ListaAvisos() {
             <svg className="w-16 h-16 text-blue-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
             </svg>
-            <p className={`text-gray-600 text-lg`}>
+            <p className={`${roboto.className} text-gray-600 text-lg`}>
               Nenhum aviso disponível no momento.
             </p>
           </div>
@@ -207,11 +223,11 @@ export default function ListaAvisos() {
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
                     <div className="flex items-center mb-2">
-                      <h2 className={`text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300`}>
+                      <h2 className={`${merriweather.className} text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300`}>
                         {aviso.titulo}
                       </h2>
                     </div>
-                    <p className={`text-gray-600 mb-4 whitespace-pre-wrap leading-relaxed`}>
+                    <p className={`${roboto.className} text-gray-600 mb-4 whitespace-pre-wrap leading-relaxed`}>
                       {aviso.descricao}
                     </p>
                     <div className="flex items-center text-sm text-gray-500">

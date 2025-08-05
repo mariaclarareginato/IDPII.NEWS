@@ -3,8 +3,12 @@
 // Importação
 
 import { useState } from "react";
+import { Merriweather } from 'next/font/google';
 
-
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 // Accordion e estilização
 
@@ -23,7 +27,7 @@ export default function Accordion({ items }) {
             className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:bg-gray-50"
             onClick={() => toggleIndex(index)}
           >
-            <span className={`font-medium text-gray-800 pr-4`}>
+            <span className={`${merriweather.className} font-medium text-gray-800 pr-4`}>
               {item.question}
             </span>
             <svg

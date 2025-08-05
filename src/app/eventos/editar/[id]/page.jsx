@@ -3,8 +3,17 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { Roboto, Merriweather } from 'next/font/google';
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 export default function EditarEvento({ params }) {
   const router = useRouter();
@@ -118,7 +127,7 @@ export default function EditarEvento({ params }) {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <p className={`text-lg`}>Carregando...</p>
+        <p className={`${roboto.className} text-lg`}>Carregando...</p>
       </div>
     );
   }
@@ -126,10 +135,10 @@ export default function EditarEvento({ params }) {
   if (error) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-        <p className={`text-red-500 mb-4`}>{error}</p>
+        <p className={`${roboto.className} text-red-500 mb-4`}>{error}</p>
         <button
           onClick={() => router.push('/eventos')}
-          className={`text-blue-600 hover:text-blue-800`}
+          className={`${roboto.className} text-blue-600 hover:text-blue-800`}
         >
           Voltar para Eventos
         </button>
@@ -140,7 +149,7 @@ export default function EditarEvento({ params }) {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className={`text-3xl font-bold mb-8 text-center text-gray-800`}>
+        <h1 className={`${merriweather.className} text-3xl font-bold mb-8 text-center text-gray-800`}>
           Editar Evento
         </h1>
 
@@ -153,7 +162,7 @@ export default function EditarEvento({ params }) {
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6 space-y-6">
           {/* Título */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Título
             </label>
             <input
@@ -168,7 +177,7 @@ export default function EditarEvento({ params }) {
 
           {/* Descrição */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Descrição do Evento
             </label>
             <textarea
@@ -183,7 +192,7 @@ export default function EditarEvento({ params }) {
 
           {/* Data de Início */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Data de Início
             </label>
             <input
@@ -198,7 +207,7 @@ export default function EditarEvento({ params }) {
 
           {/* Data de Fim */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Data de Fim
             </label>
             <input
@@ -213,7 +222,7 @@ export default function EditarEvento({ params }) {
 
           {/* Local */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Local
             </label>
             <input
@@ -228,7 +237,7 @@ export default function EditarEvento({ params }) {
 
           {/* Imagem */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Imagem do Evento
             </label>
             <input
@@ -256,7 +265,7 @@ export default function EditarEvento({ params }) {
               type="button"
               onClick={() => router.push('/eventos')}
               className={`
-                
+                ${roboto.className}
                 px-6 py-2 bg-gray-600 text-white rounded-md
                 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500
                 transition duration-200
@@ -268,7 +277,7 @@ export default function EditarEvento({ params }) {
               type="submit"
               disabled={loading}
               className={`
-               
+                ${roboto.className}
                 px-6 py-2 bg-blue-600 text-white rounded-md
                 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500
                 disabled:opacity-50 disabled:cursor-not-allowed

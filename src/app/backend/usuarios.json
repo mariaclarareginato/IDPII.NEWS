@@ -2,7 +2,7 @@
   {
     "cpf": "08096987494",
     "email": "ana.silva@gestao.com",
-    "senha": "784512"
+    "senha": "888"
   },
   {
     "cpf": "73546543316",
@@ -298,5 +298,15 @@
     "cpf": "54786747882",
     "email": "vinicius.santana@gmail.com",
     "senha": "123"
+  },
+  {
+    "cpf": "12345678909",
+    "email": "testee@gmail.com",
+    "senha": "123"
+  },
+  {
+    "cpf": "12345678909",
+    "email": "teste3@gmail.com",
+    "senha": "333"
   }
 ]

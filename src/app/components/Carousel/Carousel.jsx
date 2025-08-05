@@ -2,6 +2,12 @@
 // components/Carousel.jsx
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Merriweather } from 'next/font/google';
+
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 const Carousel = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,7 +53,7 @@ const Carousel = ({ slides }) => {
             {/* Título do Slide */}
             <div className="absolute bottom-16 left-0 right-0 px-8 text-white">
               <div className="max-w-4xl mx-auto">
-                <h2 className={`text-2xl md:text-3xl font-bold text-center`}>
+                <h2 className={`${merriweather.className} text-2xl md:text-3xl font-bold text-center`}>
                   {slide.title}
                 </h2>
               </div>

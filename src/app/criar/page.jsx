@@ -2,8 +2,17 @@
 
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
+import { Roboto, Merriweather } from 'next/font/google';
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 const CATEGORIAS = [
   'Educação',
@@ -169,7 +178,7 @@ export default function Criar() {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className={`text-3xl font-bold mb-8 text-center text-gray-800`}>
+        <h1 className={`${merriweather.className} text-3xl font-bold mb-8 text-center text-gray-800`}>
           Criar Novo Conteúdo
         </h1>
 
@@ -188,7 +197,7 @@ export default function Criar() {
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6 space-y-6">
           {/* Seleção do Tipo de Conteúdo */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Tipo de Conteúdo
             </label>
             <select
@@ -206,7 +215,7 @@ export default function Criar() {
 
           {/* Título */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               Título
             </label>
             <input
@@ -221,7 +230,7 @@ export default function Criar() {
 
           {/* Descrição */}
           <div>
-            <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+            <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
               {tipoConteudo === 'evento' ? 'Descrição do Evento' : 'Descrição'}
             </label>
             <textarea
@@ -239,7 +248,7 @@ export default function Criar() {
             <>
               {/* Data */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Data
                 </label>
                 <input
@@ -254,7 +263,7 @@ export default function Criar() {
 
               {/* Categoria */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Categoria
                 </label>
                 <select
@@ -275,7 +284,7 @@ export default function Criar() {
 
               {/* Imagem */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Imagem
                 </label>
                 <input
@@ -303,7 +312,7 @@ export default function Criar() {
             <>
               {/* Data de Início */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Data de Início
                 </label>
                 <input
@@ -318,7 +327,7 @@ export default function Criar() {
 
               {/* Data de Fim */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Data de Fim
                 </label>
                 <input
@@ -333,7 +342,7 @@ export default function Criar() {
 
               {/* Local */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Local
                 </label>
                 <input
@@ -348,7 +357,7 @@ export default function Criar() {
 
               {/* Imagem */}
               <div>
-                <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+                <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                   Imagem do Evento
                 </label>
                 <input
@@ -374,7 +383,7 @@ export default function Criar() {
 
           {tipoConteudo === 'aviso' && (
             <div>
-              <label className={`block text-sm font-medium text-gray-700 mb-1`}>
+              <label className={`${roboto.className} block text-sm font-medium text-gray-700 mb-1`}>
                 Data
               </label>
               <input
@@ -394,7 +403,7 @@ export default function Criar() {
               type="submit"
               disabled={loading}
               className={`
-                
+                ${roboto.className}
                 px-6 py-2 bg-blue-600 text-white rounded-md
                 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500
                 disabled:opacity-50 disabled:cursor-not-allowed

@@ -5,8 +5,23 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel from "./components/Carousel/Carousel";
 import { buscarNoticias } from "./services/noticiasService";
+import { Roboto, Merriweather, Playfair_Display } from 'next/font/google';
 import Accordion from "./components/Accordion/Accordion.js";
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 // Perguntas frequentes e respostas 
 const faqItems = [
@@ -91,7 +106,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="h-full min-h-48 flex items-center justify-center">
-        <p className={``}>Carregando notícias...</p>
+        <p className={`${roboto.className}`}>Carregando notícias...</p>
       </div>
     );
   }
@@ -99,7 +114,7 @@ export default function Home() {
   if (error) {
     return (
       <div className="h-full min-h-48 flex items-center justify-center">
-        <p className={`text-red-500`}>{error}</p>
+        <p className={`${roboto.className} text-red-500`}>{error}</p>
       </div>
     );
   }
@@ -116,11 +131,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Texto Principal */}
             <div className="md:col-span-7 space-y-6 relative">
-              <h1 className={`text-4xl md:text-5xl font-bold text-gray-900 leading-tight`}>
+              <h1 className={`${playfairDisplay.className} text-4xl md:text-5xl font-bold text-gray-900 leading-tight`}>
                 <span className="text-blue-600">Educação</span> que transforma,<br />
                 <span className="text-blue-600">Conhecimento</span> que inspira
               </h1>
-              <p className={`text-lg text-gray-600 max-w-2xl`}>
+              <p className={`${merriweather.className} text-lg text-gray-600 max-w-2xl`}>
                 Descubra as últimas novidades, eventos e conquistas da nossa comunidade acadêmica. 
                 Mantenha-se informado sobre tudo que acontece no Instituto Dom Pedro II.
               </p>
@@ -159,7 +174,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                   </svg>
                 </div>
-                <h3 className={`font-bold text-gray-900`}>Notícias</h3>
+                <h3 className={`${merriweather.className} font-bold text-gray-900`}>Notícias</h3>
                 <p className="text-sm text-gray-600">Atualizações diárias sobre nossa instituição</p>
               </div>
               </Link>
@@ -171,7 +186,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className={`font-bold text-gray-900`}>Eventos</h3>
+                <h3 className={`${merriweather.className} font-bold text-gray-900`}>Eventos</h3>
                 <p className="text-sm text-gray-600">Programação de eventos e atividades</p>
               </div>
               </Link>
@@ -184,7 +199,7 @@ export default function Home() {
                   </svg>
                 </div>
                 
-                <h3 className={`font-bold text-gray-900`}>Avisos</h3>
+                <h3 className={`${merriweather.className} font-bold text-gray-900`}>Avisos</h3>
                 <p className="text-sm text-gray-600">Comunicados importantes para alunos</p>
                 
               </div>
@@ -197,7 +212,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h3 className={`font-bold text-gray-900`}>Sobre Nós</h3>
+                <h3 className={`${merriweather.className} font-bold text-gray-900`}>Sobre Nós</h3>
                 <p className="text-sm text-gray-600">Veja um pouco sobre nossa história</p>
               </div>
               </Link>
@@ -213,15 +228,15 @@ export default function Home() {
       <div className="bg-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className={`text-3xl md:text-4xl font-bold text-gray-900 mb-4`}>
+            <h2 className={`${playfairDisplay.className} text-3xl md:text-4xl font-bold text-gray-900 mb-4`}>
               Principais Notícias
             </h2>
             <div className="flex justify-center items-center gap-4 mb-6">
               <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-              <span className={`text-blue-600 font-semibold`}>Em Destaque</span>
+              <span className={`${merriweather.className} text-blue-600 font-semibold`}>Em Destaque</span>
               <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
             </div>
-            <p className={`text-gray-600 max-w-2xl mx-auto`}>
+            <p className={`${merriweather.className} text-gray-600 max-w-2xl mx-auto`}>
               Fique por dentro das notícias mais relevantes e dos acontecimentos que estão movimentando nossa instituição
             </p>
           </div>
@@ -283,7 +298,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
                 </svg>
               </div>
-              <div className={`text-2xl font-bold text-gray-900 mb-1`}>
+              <div className={`${playfairDisplay.className} text-2xl font-bold text-gray-900 mb-1`}>
                 {noticias.length}+
               </div>
               <p className="text-gray-600 text-sm">Notícias Publicadas</p>
@@ -294,7 +309,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <div className={`text-2xl font-bold text-gray-900 mb-1`}>
+              <div className={`${playfairDisplay.className} text-2xl font-bold text-gray-900 mb-1`}>
                 24h
               </div>
               <p className="text-gray-600 text-sm">Atualização Diária</p>
@@ -305,7 +320,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <div className={`text-2xl font-bold text-gray-900 mb-1`}>
+              <div className={`${playfairDisplay.className} text-2xl font-bold text-gray-900 mb-1`}>
                 1000+
               </div>
               <p className="text-gray-600 text-sm">Alunos Alcançados</p>
@@ -316,7 +331,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2M7 7h10" />
                 </svg>
               </div>
-              <div className={`text-2xl font-bold text-gray-900 mb-1`}>
+              <div className={`${playfairDisplay.className} text-2xl font-bold text-gray-900 mb-1`}>
                 4
               </div>
               <p className="text-gray-600 text-sm">Categorias</p>
@@ -356,13 +371,13 @@ export default function Home() {
     </div>
 
           <div className="p-4 flex flex-col flex-grow">
-            <h2 className={`text-lg font-bold mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300`}>
+            <h2 className={`${merriweather.className} text-lg font-bold mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300`}>
               {noticia.titulo}
       </h2>
-            <p className={`text-sm text-gray-600 mb-2`}>
+            <p className={`${roboto.className} text-sm text-gray-600 mb-2`}>
               {formatarData(noticia.data)}
             </p>
-            <p className={`text-sm text-gray-700 line-clamp-3 mb-4`}>
+            <p className={`${roboto.className} text-sm text-gray-700 line-clamp-3 mb-4`}>
               {noticia.descricao}
             </p>
             <div className="mt-auto flex items-center text-blue-600 font-semibold group-hover:text-blue-700">
@@ -389,15 +404,15 @@ export default function Home() {
 <div className="w-full flex justify-center bg-gray-100 py-10">
   <section className="w-full max-w-6xl px-4 text-gray-700">
     <div className="text-center mb-12">
-      <h2 className={`text-3xl md:text-4xl font-bold text-gray-900 mb-4`}>
+      <h2 className={`${playfairDisplay.className} text-3xl md:text-4xl font-bold text-gray-900 mb-4`}>
         Perguntas Frequentes
       </h2>
       <div className="flex justify-center items-center gap-4 mb-6">
         <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-        <span className={`text-blue-600 font-semibold`}>FAQ</span>
+        <span className={`${merriweather.className} text-blue-600 font-semibold`}>FAQ</span>
         <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
       </div>
-      <p className={`text-gray-600 max-w-2xl mx-auto mb-8`}>
+      <p className={`${merriweather.className} text-gray-600 max-w-2xl mx-auto mb-8`}>
         Encontre respostas para as dúvidas mais comuns sobre nosso portal de notícias
       </p>
     </div>
