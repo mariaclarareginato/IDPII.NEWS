@@ -1,12 +1,13 @@
 # IDP
 
 
-
+<div align="center">
 📰 IDP News – Portal de Notícias do Instituto Dom Pedro II
+
+<br>
  
-
 <img width="752" height="748" alt="image" src="https://github.com/user-attachments/assets/297ea74f-7a1c-42f5-bbd1-93e465547e72" />
-
+</div>
 
 #
 📰 IDP News – Portal de Notícias do Colégio Técnico Instituto Dom Pedro II
