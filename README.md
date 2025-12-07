@@ -13,7 +13,7 @@
 </div>
 
 #
-📰 IDP News – Portal de Notícias do Colégio Técnico Instituto Dom Pedro II
+
 
 **IDP News** é um portal institucional desenvolvido com o objetivo de centralizar e divulgar notícias, eventos, avisos e informações relevantes do Instituto Dom Pedro II de forma acessível, moderna e organizada.
 
